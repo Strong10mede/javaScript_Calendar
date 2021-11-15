@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calendar</title>
+    <link rel="stylesheet" href="dycalendar.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            <div class="container">
+                <div id="dycalendar1"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="dycalendar.js"></script>
+    <script>
+        dycalendar.draw({
+            target: "#dycalendar1",
+            type: "month",
+            prevnextbutton: "show",
+            dayformat: "full",
+            monthformat: "full",
+            highlighttargetdate: true,
+        })
+    </script>
+</body>
+
+</html>
